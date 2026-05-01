@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Новости и события | Типография ПрессРост</title>
+    <meta name="description" content="Последние новости типографии РОСТ, анонсы выставок, новые технологии маркировки и печати самоклеящихся этикеток.">
+    <link rel="canonical" href="https://pressrost.ru/news.html">
+
+    <!-- Open Graph (Для ссылок в мессенджерах) -->
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://pressrost.ru/news.html">
+    <meta property="og:title" content="Новости и события | Типография ПрессРост">
+    <meta property="og:description" content="Последние новости типографии РОСТ, анонсы выставок, новые технологии печати.">
+    <meta property="og:image" content="https://pressrost.ru/img/og-image.jpg">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Блог Типографии ПрессРост",
+      "url": "https://pressrost.ru/news.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Типография ПрессРост"
+      }
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Подключаем базовые стили и специфичные для этой страницы -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/news.css">
+
+    <!-- ПОДКЛЮЧАЕМ НАШИ ВЕБ-КОМПОНЕНТЫ -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+</head>
+<body>
+
+    <!-- ВЫЗОВ ШАПКИ САЙТА ИЗ КОМПОНЕНТА -->
+    <site-header></site-header>
+
+    <main>
+        <!-- Заголовок страницы H1 -->
+        <div class="transparent-hero" data-aos="fade-up">
+            <h1>Пресс-центр</h1>
+            <p>События, инновации, участие в выставках и важные обновления из жизни нашей типографии.</p>
+        </div>
+
+        <section class="news-section">
+            <!-- Контейнер для динамического вывода новостей -->
+            <div id="dynamicNewsContainer"></div>
+
+            <div class="pagination" data-aos="fade-up">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <div class="page-dots">...</div>
+                <a href="#" class="page-link">&gt;</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ВЫЗОВ ПОДВАЛА И СТАНДАРТНОГО ОКНА ЗАКАЗА ИЗ КОМПОНЕНТА -->
+    <site-footer></site-footer>
+
+    <!-- УНИКАЛЬНОЕ ОКНО: Чтение новости -->
+    <div id="newsReadModal" class="news-read-modal">
+        <div class="news-read-content">
+            <button class="close-news-btn" id="closeNewsModalBtn">&times;</button>
+            <div class="news-read-body">
+                <img src="" alt="Обложка новости" class="news-read-hero-img" id="ocImage" onerror="this.src='https://via.placeholder.com/1200x500/eee/999?text=Фото'">
+                <div class="news-read-text-wrapper">
+                    <div class="news-date" id="ocDate">Дата</div>
+                    <h2 class="news-read-title" id="ocTitle">Заголовок новости</h2>
+                    <div class="oc-text" id="ocContent">
+                        Текст новости будет загружен сюда...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/news-data.js"></script> <!-- Данные с новостями -->
+    <script src="js/main.js" defer></script> <!-- Глобальная логика -->
+    <script src="js/news.js" defer></script> <!-- Логика конкретно для страницы новостей -->
+</body>
+</html>
