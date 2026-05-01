@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Типография ПрессРост | Печать самоклеящихся этикеток в Нижнем Новгороде</title>
+    <meta name="description" content="Инновационная печать этикеток полного цикла. Флексопечать, цифровая печать, маркировка Честный Знак. Оптовые поставки B2B в Нижнем Новгороде.">
+    <link rel="canonical" href="https://pressrost.ru/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pressrost.ru/">
+    <meta property="og:title" content="Типография ПрессРост | Печать самоклеящихся этикеток">
+    <meta property="og:description" content="Инновационная печать этикеток полного цикла. Флексопечать, цифровая печать, маркировка Честный Знак.">
+    <meta property="og:image" content="https://pressrost.ru/img/og-image.jpg">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Типография ПрессРост",
+      "image": "https://pressrost.ru/img/logo.webp",
+      "telephone": "8 (800) 700-60-99",
+      "email": "rost@rost.nnov.ru",
+      "url": "https://pressrost.ru/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Нижний Новгород",
+        "streetAddress": "ул. Памирская, 11, лит. В",
+        "postalCode": "603032",
+        "addressCountry": "RU"
+      }
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Подключаем внешний CSS файл -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- ПОДКЛЮЧАЕМ НАШИ ВЕБ-КОМПОНЕНТЫ -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/marking-block.js"></script>
+</head>
+<body>
+
+    <!-- ВЫЗОВ ШАПКИ САЙТА ИЗ КОМПОНЕНТА -->
+    <site-header></site-header>
+
+    <main>
+        <h1 class="visually-hidden">Инновационная печать этикеток полного цикла в Нижнем Новгороде</h1>
+
+        <section class="hero-banner">
+            <div class="hero-slide active">
+                <div class="slide-bg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/hero2-mobile.webp">
+                        <img src="img/hero2.webp" alt="Склад рулонов этикеток">
+                    </picture>
+                </div>
+                <div class="slide-container">
+                    <div class="slide-text">
+                        <span class="slide-label">Надежный партнер</span>
+                        <div class="hero-title">Этикетка, которая продает ваш продукт</div>
+                        <p>Создаем упаковку, которая работает на ваш бизнес</p>
+                        <div class="slide-buttons">
+                            <!-- trigger-modal автоматически связывается с окном из footer.js -->
+                            <button class="btn btn-order trigger-modal">Оставить заявку</button>
+                            <a href="#products" class="btn btn-outline-hero">Смотреть каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-slide">
+                <div class="slide-bg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/hero1-mobile.webp">
+                        <img src="img/hero1.webp" alt="Производство этикеток">
+                    </picture>
+                </div>
+                <div class="slide-container">
+                    <div class="slide-text">
+                        <span class="slide-label">Инновационная печать</span>
+                        <div class="hero-title">РОСТ вашего бренда начинается с этикетки</div>
+                        <p>Печать этикеток полного цикла для производителей любого масштаба</p>
+                        <div class="slide-buttons">
+                            <button class="btn btn-order trigger-modal">Оставить заявку</button>
+                            <a href="#products" class="btn btn-outline-hero">Смотреть каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide">
+                <div class="slide-bg">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/hero3-mobile.webp">
+                        <img src="img/hero3.webp" alt="Новости типографии">
+                    </picture>
+                </div>
+                <div class="slide-container">
+                    <div class="slide-text">
+                        <span class="slide-label">События и выставки</span>
+                        <div class="hero-title">Анонсы и важные новости нашей типографии</div>
+                        <p>Будьте в курсе последних технологических новинок, наших достижений и предстоящих мероприятий.</p>
+                        <div class="slide-buttons">
+                            <button class="btn btn-order trigger-modal">Оставить заявку</button>
+                            <a href="news.html" class="btn btn-outline-hero">Смотреть новости</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <div class="slider-pagination">
+                    <span class="current">01</span> / <span class="total">03</span>
+                </div>
+                <button class="slider-btn next-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="trust-section" data-aos="fade-in" data-aos-duration="1000">
+            <h2 class="trust-title">Нам доверяют лидеры рынка</h2>
+            <div class="logos-slider">
+                <div class="logos-track">
+                    <div class="logo-group">
+                        <div class="logo-slide"><img src="img/SORDIS.png" alt="SORDIS" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/T-S-I.png" alt="T-S-I" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/OAO_HLEB.png" alt="ОАО Хлеб" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/CHZ.png" alt="ЧЗ" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/SYNERGETIC.png" alt="Synergetic" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/NEFIS.png" alt="Nefis" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/BMG.png" alt="BMG" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="logo-slide"><img src="img/DyadyaVANYA.png" alt="Дядя Ваня" loading="lazy" onerror="this.style.display='none'"></div>
+                    </div>
+                    
+                    <div class="logo-group" aria-hidden="true">
+                        <div class="logo-slide"><img src="img/SORDIS.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/T-S-I.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/OAO_HLEB.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/CHZ.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/SYNERGETIC.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/NEFIS.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/BMG.png" alt="" loading="lazy"></div>
+                        <div class="logo-slide"><img src="img/DyadyaVANYA.png" alt="" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Наши решения</h2>
+                <p>Специализированная этикетка для вашего бизнеса</p>
+            </div>
+            
+            <div class="products-tabs-header" data-aos="fade-up">
+                <button class="products-tab-btn active" onclick="openProductTab(event, 'tab-industries')">Отрасли</button>
+                <button class="products-tab-btn" onclick="openProductTab(event, 'tab-products')">Продукция</button>
+            </div>
+
+            <div id="tab-industries" class="product-tab-content active">
+                <div class="catalog-grid">
+                    <div class="product-card" data-category="Алкогольная продукция" data-type="industry" data-prefix="alcohol" data-images-count="12" data-aos="fade-up" data-aos-delay="0">
+                        <div class="product-img">
+                            <img src="img/alcohol.webp" alt="Этикетка для алкоголя" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Этикетки для алкогольной продукции</h3>
+                            <p>Эксклюзивные винные бумаги и сложные формы вырубки.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Косметика и парфюмерия" data-type="industry" data-prefix="cosmetics" data-images-count="12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="img/cosmetics.webp" alt="Этикетка для косметики" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Этикетки для косметики и парфюмерии</h3>
+                            <p>Стойкость к маслам и влаге, прозрачные материалы.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Пищевая продукция" data-type="industry" data-prefix="food" data-images-count="12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="img/food.webp" alt="Этикетка для пищепрома" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Этикетки для пищевой продукции</h3>
+                            <p>Безопасные краски и морозостойкие клеи.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Автохимия" data-type="industry" data-prefix="autochem" data-images-count="12" data-aos="fade-up" data-aos-delay="0">
+                        <div class="product-img">
+                            <img src="img/autochem.webp" alt="Этикетка для автохимии" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Этикетки для автохимии</h3>
+                            <p>Стойкость к агрессивным средам, ГСМ и долговечность маркировки.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Термоусадочная этикетка" data-type="industry" data-prefix="shrink" data-images-count="12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="img/shrink.webp" alt="Термоусадочная этикетка" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Термоусадочная этикетка</h3>
+                            <p>Идеальное прилегание к сложным формам и 360° рекламной площади.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Бытовая химия" data-type="industry" data-prefix="household" data-images-count="12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="img/household.webp" alt="Этикетка для бытовой химии" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Этикетки для бытовой химии</h3>
+                            <p>Устойчивость к щелочам и ПАВ. Яркий дизайн для полки супермаркета.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-products" class="product-tab-content">
+                <div class="catalog-grid">
+                    <div class="product-card" data-category="Самоклеящиеся этикетки" data-type="product" data-prefix="self_adhesive" data-images-count="12" data-aos="fade-up" data-aos-delay="0">
+                        <div class="product-img">
+                            <img src="img/self_adhesive.webp" alt="Самоклеящиеся этикетки" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Самоклеящиеся этикетки</h3>
+                            <p>Универсальное решение для любого вида продукции.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Термоусадочные этикетки" data-type="product" data-prefix="shrink_labels" data-images-count="12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="img/shrink_labels.webp" alt="Термоусадочные этикетки" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Термоусадочные этикетки</h3>
+                            <p>Полный охват тары любой сложной формы.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Цифровая этикетка" data-type="product" data-prefix="digital_labels" data-images-count="12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="img/digital_labels.webp" alt="Цифровая этикетка" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Цифровая этикетка</h3>
+                            <p>Идеально для малых тиражей и персонализации продукта.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Честный Знак" data-type="product" data-prefix="chestny_znak" data-images-count="12" data-aos="fade-up" data-aos-delay="0">
+                        <div class="product-img">
+                            <img src="img/chestny_znak.webp" alt="Честный Знак" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Честный Знак</h3>
+                            <p>Надежная печать кодов Data Matrix с гарантией считываемости.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Трафаретная печать" data-type="product" data-prefix="screen_printing" data-images-count="12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-img">
+                            <img src="img/screen_printing.webp" alt="Трафаретная печать" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Трафаретная печать</h3>
+                            <p>Насыщенные цвета и ощутимый объем краски.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="Цифровой трафарет и тиснение" data-type="product" data-prefix="digital_embossing" data-images-count="12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img">
+                            <img src="img/digital_embossing.webp" alt="Цифровой трафарет и тиснение" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>Цифровой трафарет и тиснение</h3>
+                            <p>Премиальная отделка без затрат на печатные формы.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="БОПП" data-type="product" data-prefix="bopp" data-images-count="12" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-img">
+                            <img src="img/bopp.webp" alt="БОПП этикетки" loading="lazy" onerror="this.style.display='none';">
+                        </div>
+                        <div class="product-info">
+                            <h3>БОПП этикетки</h3>
+                            <p>Круговая этикетка для ПЭТ-тары: прочность, влагостойкость и выгода на больших тиражах.</p>
+                            <div class="open-catalog-hint">Открыть каталог →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Технологии и Оборудование</h2>
+                <p>Передовой парк машин для реализации любых идей</p>
+            </div>
+            <div class="tabs-container" data-aos="fade-up">
+                <div class="tabs-header">
+                    <button class="tab-btn active" onclick="openTechTab(event, 'tab-flexo')">Флексопечать</button>
+                    <button class="tab-btn" onclick="openTechTab(event, 'tab-digital')">Цифровая печать</button>
+                    <button class="tab-btn" onclick="openTechTab(event, 'tab-materials')">Материалы</button>
+                    <button class="tab-btn" onclick="openTechTab(event, 'tab-finish')">Отделка</button>
+                </div>
+                
+                <div class="accordion-wrapper">
+                    <button class="mobile-accordion-btn active" onclick="toggleAccordion('tab-flexo', this)">Флексопечать <span class="icon">+</span></button>
+                    <div id="tab-flexo" class="tab-content active">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Высокая производительность</h3>
+                                <p>Идеальное решение для средних и крупных тиражей. Наш парк флексографских машин обеспечивает стабильность цвета и высокую скорость печати.</p>
+                                <ul>
+                                    <li>До 12 цветов за один прогон</li>
+                                    <li>Печать пантонами (Pantone)</li>
+                                    <li>Высокая скорость производства</li>
+                                    <li>Низкая себестоимость единицы при больших тиражах</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image"><img src="img/technology_flexo.webp" alt="Флексопечать" loading="lazy" onerror="this.src='img/hero1.webp'"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="mobile-accordion-btn" onclick="toggleAccordion('tab-digital', this)">Цифровая печать <span class="icon">+</span></button>
+                    <div id="tab-digital" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Гибкость и персонализация</h3>
+                                <p>Цифровая печать позволяет выпускать пробные партии, лимитированные коллекции и персонализированную этикетку без затрат на печатные формы.</p>
+                                <ul>
+                                    <li>Тиражи от 1 экземпляра</li>
+                                    <li>Переменные данные (номера, штрих-коды)</li>
+                                    <li>Фотографическое качество печати</li>
+                                    <li>Минимальные сроки запуска</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image"><img src="img/technology_digital.webp" alt="Цифровая печать" loading="lazy" onerror="this.src='img/hero2.webp'"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="mobile-accordion-btn" onclick="toggleAccordion('tab-materials', this)">Материалы <span class="icon">+</span></button>
+                    <div id="tab-materials" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Под любые задачи</h3>
+                                <p>Мы работаем с широчайшим спектром запечатываемых материалов от ведущих мировых производителей.</p>
+                                <ul>
+                                    <li>Самоклеящиеся бумаги (полуглянец, винные, металлизированные)</li>
+                                    <li>Пленки PP и PE (прозрачные, белые)</li>
+                                    <li>Термоусадочные рукавные пленки (PVC, PET)</li>
+                                    <li>Специальные клеи (смываемые, морозостойкие, усиленные)</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image"><img src="img/technology_materials.webp" alt="Материалы для печати" loading="lazy" onerror="this.src='img/shrink.webp'"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="mobile-accordion-btn" onclick="toggleAccordion('tab-finish', this)">Отделка <span class="icon">+</span></button>
+                    <div id="tab-finish" class="tab-content">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Премиальный вид</h3>
+                                <p>Постпечатная обработка превращает простую этикетку в произведение искусства, выделяя ваш товар на полке.</p>
+                                <ul>
+                                    <li>Горячее и холодное тиснение фольгой</li>
+                                    <li>Конгревное тиснение (объем)</li>
+                                    <li>Выборочное и сплошное лакирование</li>
+                                    <li>Трафаретный лак</li>
+                                    <li>Сложная фигурная высечка</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image"><img src="img/technology_finishing.webp" alt="Отделка этикетки" loading="lazy" onerror="this.src='img/alcohol.webp'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="why-us">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Почему выбирают нас?</h2>
+                <p>Ваш надежный партнер в мире полиграфии с 1994 года</p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-us-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="why-us-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>30+ лет опыта</h3>
+                    <p>Начали деятельность в 1994 году. За это время стали стабильным и надежным партнером для сотен компаний.</p>
+                </div>
+                <div class="why-us-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-us-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3>Гарантия качества</h3>
+                    <p>Система менеджмента качества ISO 9001:2015. Собственная технологическая база и непрерывное обучение персонала.</p>
+                </div>
+                <div class="why-us-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-us-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Современный парк</h3>
+                    <p>Машины флексографской и цифровой печати позволяют выполнять тиражи любой сложности и объема.</p>
+                </div>
+                <div class="why-us-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-us-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Оперативность</h3>
+                    <p>Широкие производственные мощности минимизируют время исполнения вашего заказа.</p>
+                </div>
+                <div class="why-us-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-us-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Сложная отделка</h3>
+                    <p>Воплощаем любые пожелания: тиснение, конгрев, лак и защита от подделок за один цикл печати.</p>
+                </div>
+                <div class="why-us-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-us-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polyline points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Своя логистика</h3>
+                    <p>Собственная служба доставки обеспечит получение заказа точно в срок и в полной сохранности.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ВЫЗОВ УМНОГО ВЕБ-КОМПОНЕНТА "БЛОК ЗАЯВКИ" -->
+        <marking-block id="marking"></marking-block>
+
+        <section class="section" id="process" style="background-color: transparent;">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Как мы работаем</h2>
+                <p>4 простых шага до получения готового тиража</p>
+            </div>
+            <div class="hero-steps">
+                <div class="step-mini-card" data-aos="fade-up" data-aos-delay="0">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <div class="step-num">01. Заявка</div>
+                    <h3>Быстрый старт</h3>
+                    <p>Оставьте заявку на сайте или позвоните нам для оперативного расчета стоимости вашего тиража.</p>
+                </div>
+                <div class="step-mini-card" data-aos="fade-up" data-aos-delay="100">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <div class="step-num">02. Макет/проверка</div>
+                    <h3>Гарантия качества</h3>
+                    <p>Наши технологи проверят ваш макет на ошибки или создадут новый, полностью готовый к печати.</p>
+                </div>
+                <div class="step-mini-card" data-aos="fade-up" data-aos-delay="200">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                    <div class="step-num">03. Печать</div>
+                    <h3>Производство 24/7</h3>
+                    <p>Запускаем тираж в печать на современном оборудование с автоматизированным контролем цвета.</p>
+                </div>
+                <div class="step-mini-card" data-aos="fade-up" data-aos-delay="300">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                    <div class="step-num">04. Доставка/самовывоз</div>
+                    <h3>Точно в срок</h3>
+                    <p>Бережно упакуем и доставим заказ на ваш склад или подготовим к выдаче в нашем офисе.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Ответы на самые популярные запросы наших клиентов</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="faq-question">Печатаете ли вы коды Честный Знак? <div class="faq-icon"></div></div>
+                    <div class="faq-answer">Да, мы осуществляем печать кодов маркировки «Честный Знак». Гарантируем 100% считываемость благодаря автоматизированному контролю на производственной линии. Вы можете предоставить нам готовые коды, или мы сгенерируем их сами.</div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">Какой минимальный тираж вы печатаете? <div class="faq-icon"></div></div>
+                    <div class="faq-answer">Мы работаем с любыми объемами, однако оптимальная стоимость за единицу продукции достигается при тиражах от 1000 штук для флексопечати. Для малых тиражей мы предлагаем цифровую печать.</div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">Помогаете ли вы с разработкой дизайна этикетки? <div class="faq-icon"></div></div>
+                    <div class="faq-answer">Да, у нас есть собственная дизайн-студия. Мы можем как доработать ваш текущий макет под технические требования, так и разработать концепцию упаковки с нуля.</div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">Осуществляете ли вы доставку в другие регионы? <div class="faq-icon"></div></div>
+                    <div class="faq-answer">Конечно. Помимо собственной логистики по Нижнему Новгороду и области, мы сотрудничаем со всеми ведущими транспортными компаниями для доставки заказов по всей России.</div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">Сколько времени занимает производство тиража? <div class="faq-icon"></div></div>
+                    <div class="faq-answer">Средний срок производства составляет от 3 до 7 рабочих дней с момента утверждения макета и поступления оплаты. Точные сроки зависят от сложности отделки и объема заказа.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Что говорят о нас клиенты</h2>
+                <p>Реальные отзывы на независимых площадках</p>
+            </div>
+            <div class="reviews-grid">
+                <a href="https://yandex.ru/maps/org/tipografiya_rost/1078325430/reviews/?ll=43.940849%2C56.269816&z=17" target="_blank" class="review-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="review-source"><span style="color: #FC3F1D;">Я</span>ндекс Карты</div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">Читайте отзывы о нашей работе и оставляйте свои комментарии.</div>
+                </a>
+                <a href="https://2gis.ru/n_novgorod/firm/2674540559731269/tab/reviews" target="_blank" class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-source"><span style="color: #7BC82E;">2</span>ГИС</div>
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">Узнайте мнение клиентов и оцените качество нашего сервиса.</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="latest-news" class="section">
+            <div class="section-header-relative" data-aos="fade-up">
+                <h2>События типографии</h2>
+                <p>Последние новости, анонсы и выставки</p>
+                <a href="news.html" class="btn btn-outline-hero btn-news-right">Все новости</a>
+            </div>
+            
+            <div id="latest-news-grid" class="news-grid-horizontal">
+                <!-- Сюда скрипт динамически вставит горизонтальные карточки новостей -->
+            </div>
+        </section>
+    </main>
+
+    <!-- ВЫЗОВ ПОДВАЛА И СТАНДАРТНОГО ОКНА ЗАКАЗА ИЗ КОМПОНЕНТА -->
+    <site-footer></site-footer>
+
+    <!-- Оставляем специфичные для этой страницы модалки -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" id="closeImgModal">&times;</span>
+        <span class="lightbox-nav prev" id="prevImgBtn">‹</span>
+        <img class="lightbox-img-content" id="modalImg" alt="Увеличенное изображение">
+        <span class="lightbox-nav next" id="nextImgBtn">›</span>
+    </div>
+
+    <div id="catalogOverlay" class="catalog-overlay">
+        <div class="overlay-header">
+            <button class="back-btn" id="overlayBackBtn">← <span>Вернуться в каталог</span></button>
+            <div class="overlay-close-icon" id="overlayCloseBtn">&times;</div>
+        </div>
+        
+        <div class="overlay-content">
+            <h2 class="overlay-main-title" id="overlayTitle">Название категории</h2>
+            <div class="overlay-desc" id="overlayDesc">Текст описания.</div>
+            
+            <div class="overlay-gallery" id="overlayGrid"></div>
+            
+            <h3 class="slider-section-title">Смотреть другие отрасли</h3>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" onclick="moveSlide('industry', -1)">‹</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="industryTrack"></div>
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('industry', 1)">›</button>
+            </div>
+
+            <h3 class="slider-section-title">Смотреть другие продукты</h3>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" onclick="moveSlide('product', -1)">‹</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="productTrack"></div>
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('product', 1)">›</button>
+            </div>
+
+            <div class="overlay-footer">
+                <button class="btn btn-order overlay-order-trigger">Оставить заявку на печать</button>
+                <button class="btn btn-outline-hero" id="overlayCloseBottomBtn">Закрыть каталог</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/news-data.js"></script> <!-- Данные новостей -->
+    <script src="js/main.js" defer></script> <!-- Вся наша JS логика -->
+</body>
+</html>
